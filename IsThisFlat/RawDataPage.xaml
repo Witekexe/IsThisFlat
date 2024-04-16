@@ -1,0 +1,52 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IsThisFlat.RawDataPage"
+             Title="Raw Data"
+             BackgroundColor="White">
+    <Grid RowSpacing="20"
+          Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="Raw Data"
+               FontFamily="Segoe UI"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="Black" />
+        <StackLayout Grid.Row="1"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     Spacing="20">
+            <Label x:Name="Label1"
+                   Text="Label 1"
+                   FontFamily="Segoe UI"
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="Black" />
+            <Label x:Name="Label2"
+                   Text="Label 2"
+                   FontFamily="Segoe UI"
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="Black" />
+            <Label x:Name="Label3"
+                   Text="Label 3"
+                   FontFamily="Segoe UI"
+                   FontSize="Medium"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="Black" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

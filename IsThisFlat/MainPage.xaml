@@ -1,0 +1,72 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IsThisFlat.MainPage"
+             Title="IS IT FLAT"
+             BackgroundColor="White">
+    <Grid RowSpacing="20"
+          Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="StartStopButton"
+                Text="Start"
+                Clicked="StartStopButton_Clicked"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                BackgroundColor="Black"
+                TextColor="White"
+                BorderColor="Red"
+                BorderWidth="2"
+                CornerRadius="20"
+                WidthRequest="200"
+                HeightRequest="100" />
+        <StackLayout Grid.Row="1"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     Spacing="20">
+            <Label x:Name="FlatLabel"
+                   Text="IS IT FLAT?"
+                   FontFamily="Segoe UI"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="Black" />
+            <Label x:Name="ZLabel"
+                   Text="Flatness score"
+                   FontFamily="Segoe UI"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="Black" />
+        </StackLayout>
+        <StackLayout Grid.Row="3"
+                     Grid.Column="0"
+                     Grid.ColumnSpan="2"
+                     Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     Spacing="20">
+            <Button Text="Credits"
+                    Clicked="CreditsButton_Clicked"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+            <Button Text="Raw Data"
+                    Clicked="RawDataButton_Clicked"
+                    FontSize="Medium"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
